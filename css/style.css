@@ -312,7 +312,10 @@ tr{
     font-size: 24px !important;
     color: #000000;
     width: 200px;
+    gap: 20px;
 }
+
+
 
 
 .accordion-button:not(.collapsed) {
@@ -448,6 +451,7 @@ tr{
     padding-top: 70px;
     padding-bottom: 70px;
 }
+
 
 
 .title_contact_cont{
@@ -676,4 +680,698 @@ input, textarea, .btn-close, .form-select { outline: none !important; /* Ник�
 .btn_form:hover {
     background: #009846 !important;
     transition: all 0.2s ease-in-out;
+}
+
+.tablet_header{
+    display: none;
+}
+
+
+.mobile_section_service{
+    display: none;
+}
+
+ /* Стили для бургер-меню */
+    .navbar-toggler {
+        border: none;
+        padding: 0;
+        font-size: 1.5rem;
+    }
+    
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+
+    .accordion-button{
+        align-items: start !important;
+    }
+
+
+     @media(max-width: 1230px){
+        header{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .title_cont{
+             padding-left: 20px;
+            padding-right: 20px;
+        }
+
+
+        .cont_form_wrapper{
+             padding-left: 20px;
+            padding-right: 20px;
+        }
+        
+        .card_flex{
+             padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .card-list{
+            padding-left: 20px;
+            padding-right: 20px; 
+        }
+
+        .table{
+            max-width: 1100px !important;
+        }
+
+
+        .section_page_sity{
+            margin-left: 35px;
+            margin-right: 35px;
+        }
+
+
+        .cont_accordion {
+            margin-left: 35px;
+            margin-right: 35px;
+        }
+
+        .container_cont{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .cont_footer_wrapper{
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+     }
+
+     @media(max-width: 1090px){
+        .section_page_sity{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .offcanvas-header .btn-close {
+    padding: calc(var(--bs-offcanvas-padding-y) * .5) calc(var(--bs-offcanvas-padding-x) * .5);
+    margin-top: calc(-.5 * var(--bs-offcanvas-padding-y));
+    margin-right: calc(-.5 * var(--bs-offcanvas-padding-x)) !important;
+    margin-bottom: calc(-.5 * var(--bs-offcanvas-padding-y));
+    margin-left: auto;
+}
+
+
+        .cont_accordion {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .container_cont{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .cont_footer_wrapper{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+
+        .title_cont h1{
+            font-size: 60px !important;
+        }
+
+        .section_page h2{
+            font-size: 37px !important;
+        }
+
+        .swiper-backface-hidden .swiper-slide{
+            width: 316px !important;
+        }
+
+        .footer_cont_left{
+            gap: 100px;
+        }
+     }
+
+     .mobile_tarife{
+        display: none;
+     }
+
+     
+     
+     @media(max-width: 990px){
+        .desctop_section_service{
+            display: none;
+        }
+
+        .mobile_section_service{
+            display: block;
+        }
+
+        .desctop_tarife{
+            display: none;
+        }
+
+        .mobile_tarife{
+        display: block;
+        }
+     }
+
+      @media(max-width: 920px){
+           .tablet_header{
+            display: block;
+            width: -webkit-fill-available;
+        }
+
+        .desctop{
+            display: none !important;
+        }
+
+        .cont_form{
+            flex-wrap: wrap;
+        }
+
+        .servises{
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .about_cont h2 {
+            font-size: 35px;
+        }
+
+        .accordion-button{
+            font-size: 22px !important;
+        }
+
+        .about_cont_wrapper{
+            padding-left: 40px;
+        }
+
+        .hero p{
+            width: auto !important;
+        }
+
+        .prg_contact_cont{
+            width: auto !important;
+        }
+
+        .menu_footer{
+            display: none;
+        }
+
+        .cont_footer_wrapper{
+            flex-wrap: wrap;
+        }
+      }
+     
+
+      @media(max-width: 897px){
+         .btn_price_taxi{
+            display: block !important;
+            margin: 0 auto;
+            padding-top: 10px !important;
+        }
+
+        .btn_calculate{
+            margin-top: 20px !important;
+        }
+
+        .cont_form{
+            justify-content: center;
+        }
+
+        th{
+            width: 200px !important;
+        }
+
+        .result{
+            text-align: center;
+        }
+
+        .table_row{
+            width: 100px !important;
+        }
+
+
+        .modal-content {
+            width: 600px !important;
+            border-radius: 20px !important;
+        }
+
+        .btn-close{
+            margin-right: -130px !important;
+        }
+
+        .prg_modal_form {
+            margin: 0 auto!important;
+        }
+
+
+        form {
+            margin-right: 30px;
+            margin-top: 20px;
+            margin-left: 30px;
+            margin-bottom: 50px;
+            width: 550px;
+        }
+
+        .modal-content img{
+            display: none;
+        }
+
+        .modal-content, .d-flex{
+             justify-content: center;
+        }
+
+        .social_media .d-flex{
+             justify-content: start;
+        }
+
+        .form_contact{
+            text-align: center;
+        }
+
+        .form-check{
+            text-align: justify;
+        }
+
+            input[type="datetime-local"] {
+                width: 267.5px;
+            }
+
+
+            form select{
+                 width: 267.5px !important;
+            }
+      }
+
+
+       @media (max-width: 600px) {
+           .modal-content {
+        width: 100% !important;
+        border-radius: 20px !important;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+        form {
+        width: auto;
+    }
+
+    .btn-close{
+        margin-right: -70px !important;
+    }
+
+    .modal-content{
+        margin-left: 20px !important;
+    }
+
+    .modal-dialog{
+        display: flex;
+    }
+       }
+
+
+           @media (max-width: 540px) {
+               .input_flex{
+                  flex-wrap: wrap;
+               }
+
+               .prg_modal_form {
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 24px;
+                    color: #575656;
+                    width: 350px;
+                }
+
+                input[type="datetime-local"] {
+                width: 100% !important;
+            }
+
+
+            form select{
+                 width: 100% !important;
+            }
+
+            .modal-dialog{
+                    display: flex;
+                    justify-content: center;
+                    margin-left: 20px;
+                    margin-right: 20px;
+            }
+
+                .btn-close {
+                    margin-right: 20px !important;
+                }
+
+
+                .prg_modal_form{
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                
+
+                .logo_footer img {
+    width: 240px !important;
+}
+
+           }
+    
+    /* Адаптивные стили */
+    @media (max-width: 767px) {
+        .logo_mobile {
+            text-align: center;
+        }
+        
+        .offcanvas {
+            width: 75% !important;
+        }
+
+
+        .cont_form{
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .tablet_header{
+            display: none;
+        }
+
+        .mobile{
+            display: block !important;
+        }
+
+        .cont_form .cont_form input, #tariff, #services, #cityTo, #cityFrom {
+        width: 100% !important;
+    }
+
+    .cont_form, .btn_price_taxi{
+          width: 100% !important;
+    }
+
+    .about_cont h2 {
+        font-size: 32px;
+    }
+
+    .section_page_sity .d-flex{
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+
+    .title_contact_cont {
+    font-weight: 600;
+    font-size: 35px;
+    color: #F0F8FF;
+}
+
+.prg_contact_cont{
+    font-size: 17px;
+}
+
+.phone_number_cont {
+    display: flex
+;
+    gap: 30px;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+        
+    }
+
+    @media (max-width: 450px) {
+               .btn-close{
+                margin-right: 50px !important;
+               }
+
+               form{
+                padding-left: 20px;
+                padding-right: 20px;
+               }
+           }
+
+
+    @media (max-width: 490px) {
+        .title_cont h1 {
+        font-size: 50px !important;
+    }
+
+        .section_page h2 {
+        font-size: 30px !important;
+    }
+
+        .hero p {
+            font-size: 16px !important;
+        }
+
+        .cont_form input, #tariff, #services {
+           width: 88%;
+        }
+
+        .btn_price_taxi{
+              width: 88%;
+              text-align: center;
+        }
+
+
+        .about_cont_wrapper {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .politic_desctop{
+        display: none;
+    }
+
+
+    .cont_footer_wrapper {
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .politic_mobile {
+    display: block !important;
+}
+
+    .overflow_list_sity{
+            display: flex;
+            overflow: inherit;
+            width: unset;
+    }
+
+    .card_sity a {
+    width: max-content;
+}
+
+
+.list_sity_wrapper{
+    display: flex;
+    overflow: scroll;
+}
+
+.offcanvas-body button{
+    background: #0293de;
+    padding: 10px 40px !important;
+    display: block;
+    text-decoration: none !important;
+    color: white;
+    border-radius: 20px;
+}
+
+    }
+
+
+    @media(max-width: 400px){
+        .input_flex input, .form-control {
+           width: 350px !important;
+        }
+
+        .input_flex {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    #calculate, .cont_form #tariff, #services, #cityTo, #cityFrom {
+        width: 100% !important;
+    }
+
+    
+
+      #calculate #services{
+        width: 100% !important;
+      }
+
+
+    #tariff, #services {
+        width: 350px !important;
+    }
+
+    .prg_modal_form{
+        width: 350px;
+    }
+
+    form textarea{
+         width: 350px !important;
+         margin: 0 auto;
+    }
+
+    .btn_form{
+         width: 350px !important;
+    }
+
+    .form_check{
+            width: 350px;
+    margin: 0 auto;
+    padding-top: 20px;
+    }
+
+    .btn-close {
+        margin-right: 80px !important;
+    }
+    }
+
+    @media(max-width: 400px){
+        #tariff, #services {
+        width: 330px !important;
+    }
+
+    .input_flex input, .form-control {
+           width: 330px !important;
+        }
+
+
+    .prg_modal_form{
+        width: 330px;
+    }
+
+    form textarea, .form-check{
+         width: 330px !important;
+         margin: 0 auto;
+    }
+
+    .form-check{
+        padding-top: 20px;
+            font-size: 14px;
+    }
+
+    .btn_form{
+         width: 330px !important;
+    }
+
+    .title_modal_form {
+    font-weight: 600;
+    font-size: 30px;
+    color: #000000;
+}
+
+.prg_modal_form{
+    font-size: 16px;
+}
+
+.btn-close {
+        margin-right: 90px !important;
+    }
+}
+
+ @media(max-width: 390px){
+    .title_cont h1 {
+        font-size: 44px !important;
+    }
+ }
+
+.politic_mobile{
+    display: none;
+}
+
+
+ @media(max-width: 360px){
+        #tariff, #services {
+        width: 300px !important;
+    }
+
+    .input_flex input, .form-control {
+           width: 300px !important;
+        }
+
+
+    .prg_modal_form{
+        width: 300px;
+    }
+
+    form textarea, .form-check{
+         width: 300px !important;
+         margin: 0 auto;
+    }
+
+    .form-check{
+        padding-top: 20px;
+            font-size: 14px;
+    }
+
+    .btn_form{
+         width: 300px !important;
+    }
+
+    .title_modal_form {
+    font-weight: 600;
+    font-size: 30px;
+    color: #000000;
+}
+
+.prg_modal_form{
+    font-size: 16px;
+}
+
+.btn-close {
+        margin-right: 120px !important;
+    }
+}
+
+
+@media(max-width: 330px){
+        #tariff, #services {
+        width: 270px !important;
+    }
+
+    .input_flex input, .form-control {
+           width: 270px !important;
+        }
+
+
+    .prg_modal_form{
+        width: 270px;
+    }
+
+    form textarea, .form-check{
+         width: 270px !important;
+         margin: 0 auto;
+    }
+
+    .form-check{
+        padding-top: 20px;
+            font-size: 14px;
+    }
+
+    .btn_form{
+         width: 270px !important;
+    }
+
+    .title_modal_form {
+    font-weight: 600;
+    font-size: 30px;
+    color: #000000;
+}
+
+.prg_modal_form{
+    font-size: 16px;
+}
+
+.btn-close {
+        margin-right: 150px !important;
+    }
 }
