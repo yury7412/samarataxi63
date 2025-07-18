@@ -10,42 +10,196 @@
   </head>
   <body>
     
-    <header class="d-flex align-items-center justify-content-between" style="max-width: 1200px; margin: 0 auto; margin-top: 20px; margin-bottom: 20px;">
-       <div class="logo">
-            <a href="/"><img src="img/Frame 2.svg" style="width: 270px;" alt="logo"></a>
-       </div>
+    <header>
+    <!-- Десктопная версия -->
 
-       <div class="navbar">
+    <div class="desctop" style="max-width: 1200px;margin: 0 auto;margin-top: 20px;margin-bottom: 20px;display: flex;justify-content: space-between;align-items: center;">
+      <div class="logo d-none d-md-block">
+        <a href="/"><img src="img/Frame 2.svg" style="width: 270px;" alt="logo"></a>
+    </div>
+
+    <div class="navbar d-none d-md-block">
         <ul class="nav d-flex flex-wrap gap-3">
             <li><a href="" class="text-decoration-none fw-medium lh-sm text-dark link_menu hover-primary" style="font-size: 17px;">Тарифы</a></li>
             <li><a href="" class="text-decoration-none fw-medium lh-sm text-dark hover-primary" style="font-size: 17px;">Услуги</a></li>
             <li><a href="" class="text-decoration-none fw-medium lh-sm text-dark hover-primary" style="font-size: 17px;">Доп услуги</a></li>
             <li class="nav-item dropdown">
-          <a class="dropdown-toggle text-decoration-none fw-medium lh-sm text-dark hover-primary" style="font-size: 17px;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Еще
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Частые вопросы</a></li>
-            <li><a class="dropdown-item" href="#">Направления</a></li>
-          </ul>
-        </li>
+                <a class="dropdown-toggle text-decoration-none fw-medium lh-sm text-dark hover-primary" style="font-size: 17px;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Еще
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Частые вопросы</a></li>
+                    <li><a class="dropdown-item" href="#">Направления</a></li>
+                </ul>
+            </li>
         </ul>
-       </div>
+    </div>
 
-       <div class="social_media">
-          <div class="d-flex" style="gap: 15px;">
+    <div class="social_media d-none d-md-block">
+        <div class="d-flex" style="gap: 15px;">
             <a href=""><img src="img/tg.svg" width="38" alt="tg"></a>
-             <a href=""><img src="img/whatsapp.svg" width="38" alt="whatsapp"></a>
-          </div>
-       </div>
+            <a href=""><img src="img/whatsapp.svg" width="38" alt="whatsapp"></a>
+        </div>
+    </div>
 
-       <div class="contact_cont d-grid" style="gap: 5px;">
-           <a href="" class="text-decoration-none fw-medium lh-sm text-dark link_menu hover-primary" style="font-size: 22px;">+7 (927) 713-82-11</a>
-       <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="link_menu hover-primary" style="border: 0; background-color: white; text-align: start; font-family: 'Montserrat'; font-weight: 500; font-size: 16px; line-height: 18px; text-decoration-line: underline;">
-        Оставить заявку
+    <div class="contact_cont d-none d-md-grid" style="gap: 5px;">
+        <a href="" class="text-decoration-none fw-medium lh-sm text-dark link_menu hover-primary" style="font-size: 22px;">+7 (927) 713-82-11</a>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="link_menu hover-primary" style="border: 0; background-color: white; text-align: start; font-family: 'Montserrat'; font-weight: 500; font-size: 16px; line-height: 18px; text-decoration-line: underline;">
+            Оставить заявку
         </button>
-       </div>
-    </header>
+    </div>
+    </div>
+
+      <!-- Планшет -->
+
+
+      <div class="tablet_header" style="margin-top: 20px; margin-bottom: 20px;">
+        <div class="d-flex justify-content-between align-items-center w-100">
+            <!-- Соцсети на Планшете -->
+
+            
+            <!-- Лого на Планшете -->
+            <div class="logo_mobile">
+                <a href="/"><img src="img/Frame 2.svg" style="width: 250px;" alt="logo"></a>
+            </div>
+             <a href="" class="text-decoration-none fw-medium lh-sm text-dark link_menu hover-primary" style="font-size: 22px;">+7 (927) 713-82-11</a>
+
+            <div class="social_media">
+              <div class="d-flex" style="gap: 15px;">
+                  <a href=""><img src="img/tg.svg" width="38" alt="tg"></a>
+                  <a href=""><img src="img/whatsapp.svg" width="38" alt="whatsapp"></a>
+              </div>
+          </div>
+
+          
+            
+            <!-- Бургер меню -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu" aria-controls="mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        
+        <!-- Оффканвас меню -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileMenuLabel">Меню</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="" class="nav-link">Тарифы</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Услуги</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Доп услуги</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Еще
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Частые вопросы</a></li>
+                            <li><a class="dropdown-item" href="#">Направления</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mt-3">
+                        <a href="" class="nav-link fw-bold" style="font-size: 20px;">+7 (927) 713-82-11</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-link nav-link text-decoration-underline p-0">
+                            Оставить заявку
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Мобильная версия -->
+     <div class="mobile" style="display: none; margin-top: 20px; margin-bottom: 20px;">
+          <div class="d-md-none w-100">
+            <div class="social_media" style="justify-content: end;margin-bottom: 20px;display: flex;">
+              <div class="d-flex" style="gap: 15px;">
+                  <a href=""><img src="img/tg.svg" width="38" alt="tg"></a>
+                  <a href=""><img src="img/whatsapp.svg" width="38" alt="whatsapp"></a>
+              </div>
+          </div>
+        <div class="d-flex justify-content-between align-items-center w-100">
+            <!-- Соцсети на мобилке -->
+
+            
+            <!-- Лого на мобилке -->
+            <div class="logo_mobile">
+                <a href="/"><img src="img/Frame 2.svg" style="width: 220px;" alt="logo"></a>
+            </div>
+
+            
+            <!-- Бургер меню -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileMenu1" aria-controls="mobileMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+        
+        <!-- Оффканвас меню -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="mobileMenu1" aria-labelledby="mobileMenuLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="mobileMenuLabel">Меню</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="" class="nav-link">Тарифы</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Услуги</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Доп услуги</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Еще
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Частые вопросы</a></li>
+                            <li><a class="dropdown-item" href="#">Направления</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mt-3">
+                        <a href="" class="nav-link fw-bold">+7 (927) 713-82-11</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="btn btn-link nav-link text-decoration-underline p-0">
+                            Оставить заявку
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+     </div>
+</header>
+
+<style>
+    /* Стили для бургер-меню */
+    .navbar-toggler {
+        border: none;
+        padding: 0;
+        font-size: 1.5rem;
+    }
+    
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+    
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    }
+    
+    /* Адаптивные стили */
+    @media (max-width: 767.98px) {
+        .logo_mobile {
+            text-align: center;
+        }
+        
+        .offcanvas {
+            width: 75% !important;
+        }
+    }
+</style>
 
 
     <div class="hero">
@@ -113,7 +267,7 @@
     </div>
 
 
-    <div class="section_page">
+    <div class="section_page desctop_section_service">
          <h2>Основные услуги</h2>
         
          <div class="card_flex" style="max-width: 1200px; margin: 0 auto;">
@@ -165,7 +319,57 @@
     </div>
 
 
-      <div class="section_page">
+    <div class="section_page mobile_section_service">
+         <h2>Основные услуги</h2>
+        
+         <div class="card_flex" style="max-width: 1200px; margin: 0 auto;">
+            <div class="card visible" style="border-radius: 20px;">
+                <img src="img/Rectangle 1.png" class="card-img-top" alt="photo" style="height: 250px; object-fit: cover; border-radius: 20px 20px 0 0;">
+                <div class="card-body">
+                    <div class="card-title">Заголовок карточки</div>
+                    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+
+                    <div class="price_card">Бесплатно</div>
+                </div>
+                </div>
+
+
+                <div class="card" style="border-radius: 20px;">
+                <img src="img/Rectangle 1.png" class="card-img-top" alt="photo" style="height: 250px; object-fit: cover; border-radius: 20px 20px 0 0;">
+                <div class="card-body">
+                    <div class="card-title">Заголовок карточки</div>
+                    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+
+                    <div class="price_card">Бесплатно</div>
+                </div>
+                </div>
+
+
+                
+                <div class="card" style="border-radius: 20px;">
+                <img src="img/Rectangle 1.png" class="card-img-top" alt="photo" style="height: 260px; object-fit: cover; border-radius: 20px 20px 0 0;">
+                <div class="card-body">
+                    <div class="card-title">Заголовок карточки</div>
+                    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+
+                    <div class="price_card">Бесплатно</div>
+                </div>
+                </div>
+
+                 <div class="card" style="border-radius: 20px; display: none;">
+                <img src="img/Rectangle 1.png" class="card-img-top" alt="photo" style="height: 250px; object-fit: cover; border-radius: 20px 20px 0 0;">
+                <div class="card-body">
+                    <div class="card-title">Заголовок карточки</div>
+                    <p class="card-text">Небольшой пример текста, который должен основываться на названии карточки и составлять основную часть содержимого карты.</p>
+
+                    <div class="price_card">Бесплатно</div>
+                </div>
+                </div>  
+         </div>
+    </div>
+
+
+      <div class="section_page desctop_tarife">
            <h2>Наши тарифы</h2>
 
            <div class="container swiper" style="max-width: 1200px; margin: 0 auto;">
@@ -224,7 +428,51 @@
     </div>
       </div>
 
-        <div class="section_page">
+
+      <div class="section_page mobile_tarife">
+           <h2>Наши тарифы</h2>
+
+           <div class="container swiper" style="max-width: 1200px; margin: 0 auto;">
+      <div class="wrapper">
+        <div class="card-list" style="padding-top: 30px; padding-top: 30px;display: flex;overflow: scroll;gap: 30px;">
+           <div class="card card_service swiper-slide" style="border-radius: 20px; width: 300px;">
+                <div class="card-body">
+                    <div class="card-title_service">Эконом класс</div>
+                     <div class="price_service">От 20 руб. за км</div>
+                     <img src="img/econom.png" width="90%" alt="econon">
+                </div>
+            </div> 
+
+
+            <div class="card card_service swiper-slide" style="border-radius: 20px; width: 300px;">
+                <div class="card-body">
+                    <div class="card-title_service">Эконом класс</div>
+                     <div class="price_service">От 20 руб. за км</div>
+                     <img src="img/econom.png" width="90%" alt="econon">
+                </div>
+            </div> 
+
+            <div class="card card_service swiper-slide" style="border-radius: 20px; width: 300px;">
+                <div class="card-body">
+                    <div class="card-title_service">Эконом класс</div>
+                     <div class="price_service">От 20 руб. за км</div>
+                     <img src="img/econom.png" width="90%" alt="econon">
+                </div>
+            </div> 
+
+            <div class="card card_service swiper-slide" style="border-radius: 20px; width: 300px;">
+                <div class="card-body">
+                    <div class="card-title_service">Эконом класс</div>
+                     <div class="price_service">От 20 руб. за км</div>
+                     <img src="img/econom.png" width="90%" alt="econon">
+                </div>
+            </div> 
+        </div>
+    </div>
+           </div>
+      </div>
+
+        <div class="section_page servises">
            <h2>Дополнительные услуги</h2>
 
 
@@ -238,7 +486,7 @@
   </thead>
   <tbody>
     <tr>
-      <th scope="row" style="width: 300px; color: #0293DE;">1</th>
+      <th scope="row" class="table_row" style="width: 300px; color: #0293DE;">1</th>
       <td class="td">Машина для некурящих</td>
       <td  class="td">бесплатно</td>
     </tr>
@@ -308,8 +556,8 @@
           </select>
           </div>
 
-
-          <div class="list_sity_wrapper">
+          <div class="overflow_list_sity">
+              <div class="list_sity_wrapper">
             <div class="card_sity" data-region="samara">
                 <svg width="28" height="28" viewBox="0 0 33 45" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path fill-rule="evenodd" clip-rule="evenodd" d="M16.5 8.7998C15.4888 8.7998 14.4875 8.99897 13.5533 9.38593C12.6191 9.77289 11.7703 10.3401 11.0553 11.0551C10.3403 11.7701 9.77308 12.6189 9.38611 13.5531C8.99915 14.4874 8.79999 15.4886 8.79999 16.4998C8.79999 17.511 8.99915 18.5123 9.38611 19.4465C9.77308 20.3807 10.3403 21.2295 11.0553 21.9445C11.7703 22.6595 12.6191 23.2267 13.5533 23.6137C14.4875 24.0006 15.4888 24.1998 16.5 24.1998C18.5422 24.1998 20.5007 23.3886 21.9447 21.9445C23.3887 20.5005 24.2 18.542 24.2 16.4998C24.2 14.4576 23.3887 12.4991 21.9447 11.0551C20.5007 9.61105 18.5422 8.7998 16.5 8.7998ZM13.2 16.4998C13.2 15.6246 13.5477 14.7852 14.1665 14.1664C14.7854 13.5475 15.6248 13.1998 16.5 13.1998C17.3752 13.1998 18.2146 13.5475 18.8334 14.1664C19.4523 14.7852 19.8 15.6246 19.8 16.4998C19.8 17.375 19.4523 18.2144 18.8334 18.8333C18.2146 19.4521 17.3752 19.7998 16.5 19.7998C15.6248 19.7998 14.7854 19.4521 14.1665 18.8333C13.5477 18.2144 13.2 17.375 13.2 16.4998Z" fill="#009846"/>
@@ -349,6 +597,8 @@
                 <a href=""  class="hover-primary">Москва - Каменск-Шахтинский</a>
             </div>
           </div>
+          </div>
+          
       </div>
 
 
@@ -452,7 +702,7 @@
                     <a href=""><img src="img/Frame 2.svg" alt=""></a>
                   </div>
 
-                  <a href="" class="politic hover-primary">Политика конфиденциальности</a>
+                  <a href="" class="politic politic_desctop hover-primary">Политика конфиденциальности</a>
                 </div>
 
 
@@ -491,6 +741,10 @@
           <div class="d-flex" style="gap: 15px; padding-top: 10px;">
             <a href=""><img src="img/tg.svg" width="38" alt="tg"></a>
              <a href=""><img src="img/whatsapp.svg" width="38" alt="whatsapp"></a>
+          </div>
+
+          <div class="politic_link">
+           <a href="" class="politic politic_mobile hover-primary">Политика конфиденциальности</a>
           </div>
        </div>
               </div>
@@ -599,7 +853,7 @@
       reachEnd: function() {
         setTimeout(() => {
           this.slideTo(0, 800, false); // Возвращаемся к первому слайду через 0.8 секунды
-        }, 180); // Задержка перед возвратом
+        }, 700); // Задержка перед возвратом
       }
     },
 
