@@ -838,44 +838,7 @@
 
     <script>
 
-       new Swiper(".wrapper", {
-  loop: true,
-    spaceBetween: 20, /* Уменьшаем расстояние между слайдами */
-    slidesPerView: 4, /* Показываем 4 карточки */
-      centeredSlides: false, // Изменено на false для равномерного распределения
-    loopFillGroupWithBlank: false, // Добавлено для заполнения пустот в конце
-   
-
-     
-
-     // Настройки для автоматического возврата в начало
-    on: {
-      reachEnd: function() {
-        setTimeout(() => {
-          this.slideTo(0, 800, false); // Возвращаемся к первому слайду через 0.8 секунды
-        }, 700); // Задержка перед возвратом
-      }
-    },
-
-   
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  // Responsive breakpoints
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-    },
-    768: {
-      slidesPerView: 2,
-    },
-    1024: {
-      slidesPerView: 3,
-    },
-  },
-});
+      
 
 
 
@@ -1108,6 +1071,45 @@ document.addEventListener('DOMContentLoaded', function() {
           }
         });
       });
+
+       new Swiper(".wrapper", {
+  loop: true,
+    spaceBetween: 20, /* Уменьшаем расстояние между слайдами */
+    slidesPerView: 4, /* Показываем 4 карточки */
+      centeredSlides: false, // Изменено на false для равномерного распределения
+    loopFillGroupWithBlank: false, // Добавлено для заполнения пустот в конце
+   
+
+     
+
+     // Настройки для автоматического возврата в начало
+    on: {
+      reachEnd: function() {
+        setTimeout(() => {
+          this.slideTo(0, 800, false); // Возвращаемся к первому слайду через 0.8 секунды
+        }, 700); // Задержка перед возвратом
+      }
+    },
+
+   
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  // Responsive breakpoints
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
     </script>
   </body>
 </html>
